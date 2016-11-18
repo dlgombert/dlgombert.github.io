@@ -51,11 +51,24 @@ var dg = {
 		afterLoad: {
 			animateIntro: function(anchorLink, index) {
 				var ready = $('.ready').length;
+				var dfr = $.Deferred();
+				var doneCallback = function(deferred) {
+					setTimeout(function() {
+						deferred.resolve();
+					}, 1000);
+					return deferred.promise();
+				};
 				if (ready < 1) {
 					$('#fullpage').fadeTo('normal', 1, function() {
 						$('.title').addClass('ready');
+						doneCallback(dfr);
 					});
+				} else {
+					dfr.resolve();
 				}
+				$.when(dfr).then(function(data) {
+					$('.title').addClass('finished').removeClass('ready');
+				});
 			}
 		},
 		onLeave: {

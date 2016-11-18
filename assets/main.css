@@ -52,7 +52,18 @@ body {
   font-size: 24px;
   text-align: center;
 }
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width:991px) {
+  .greeting {
+    font-size: 48px;
+  }
+}
+@media (min-width:992px) and (max-width:1199px) {
+  .greeting {
+    font-size: 28px;
+    text-align: left;
+  }
+}
+@media (min-width:1200px) {
   .greeting {
     font-size: 48px;
     text-align: left;
@@ -62,7 +73,7 @@ body {
 .greeting .title {
   display: block;
 }
-@media (min-width:768px) {
+@media (min-width:992px) {
   .greeting .name,
   .greeting .title {
     display: inline;
@@ -72,7 +83,7 @@ body {
   color: #436f8b;
   display: none;
 }
-@media (min-width:768px) {
+@media (min-width:992px) {
   .greeting .slash {
     display: inline;
   }
@@ -86,14 +97,18 @@ body {
 .greeting .title {
   color: #5493c0;
   opacity: 0;
-  -webkit-transition: opacity 2.5s, text-shadow 4s;
-  transition: opacity 2.5s, text-shadow 4s;
+  text-shadow: inherit;
+  -webkit-transition: opacity 2.5s, text-shadow 2.4s;
+  transition: opacity 2.5s, text-shadow 2.4s;
   font-family: "Megrim","Dosis", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-size: 75%;
 }
 .greeting .title.ready {
+  text-shadow: rgba(115, 168, 206, 0.054902) -19px 0px 11px, rgba(113, 169, 208, 0.054902) -18px 0px 10px, rgba(108, 167, 209, 0.054902) -17px 0px 10px, rgba(106, 167, 211, 0.0588235) -16px 0px 9px, rgba(104, 167, 213, 0.0588235) -15px 0px 9px, rgba(102, 168, 215, 0.0588235) -14px 0px 8px, rgba(96, 166, 216, 0.0588235) -13px 0px 8px, rgba(94, 166, 218, 0.0588235) -12px 0px 7px, rgba(92, 166, 220, 0.0627451) -11px 0px 7px, rgba(90, 167, 222, 0.0627451) -10px 0px 6px, rgba(83, 165, 223, 0.0627451) -9px 0px 6px, rgba(81, 165, 225, 0.0627451) -8px 0px 5px, rgba(79, 165, 227, 0.0627451) -7px 0px 5px, rgba(77, 166, 229, 0.0666667) -6px 0px 4px, rgba(71, 164, 230, 0.0666667) -5px 0px 4px, rgba(69, 164, 232, 0.0666667) -4px 0px 3px, rgba(67, 165, 235, 0.0666667) -3px 0px 3px, rgba(64, 165, 237, 0.0705882) -2px 0px 2px;
+}
+.greeting .title.ready,
+.greeting .title.finished {
   opacity: 1;
-  text-shadow: rgba(89, 152, 197, 0.121569) -9px 0px 6px, rgba(87, 152, 199, 0.121569) -8px 0px 5px, rgba(84, 153, 201, 0.121569) -7px 0px 5px, rgba(82, 153, 204, 0.12549) -6px 0px 4px, rgba(76, 151, 205, 0.12549) -5px 0px 4px, rgba(73, 151, 207, 0.129412) -4px 0px 3px, rgba(71, 152, 209, 0.129412) -3px 0px 3px, rgba(69, 152, 212, 0.129412) -2px 0px 2px;
 }
 .sub-greeting {
   text-align: center;
