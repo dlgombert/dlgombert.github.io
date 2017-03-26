@@ -2,14 +2,17 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dosis:400,500|Megrim">
+<meta name="debot" content="aHR0cDovL2RsZ29tYmVydC5jb20=ENDStr">
+<link rel='dns-prefetch' href='//fonts.googleapis.com/'>
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com/'>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dosis|Megrim|Roboto:500">
 <link href="assets/vendor.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="assets/main.min.css">
 
 </head>
 <body>
 
-<nav id='fixed-navbar' class='navbar navbar-main navbar-fixed-top'><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fullPage-nav" aria-expanded="false"><span class="sr-only">Toggle Menu</span><span class="fa fa-bars"></span></button></div><div class='collapse navbar-collapse' id='fullPage-nav'><ul class="nav navbar-right navbar-nav"><li data-menuanchor="top" class="active"><a href="#top">Top</a></li><li data-menuanchor="projects"><a href="#projects">Projects</a></li><li data-menuanchor="contact"><a href="#contact">About Me</a></li></ul></div></nav>
+<nav id='fixed-navbar' class='navbar navbar-main navbar-fixed-top'><div class="container"><div class="navbar-header"><a class="navbar-brand" href="/"><img class="svg" alt="dgo-designs-logo" title="DGO Designs" src=" /assets/dgo-no-text.svg"><img class="png" alt="dgo-designs-logo" title="DGO Designs" src=" /assets/dgo-no-text.png"></a><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fullPage-nav" aria-expanded="false"><span class="sr-only">Toggle Menu</span><span class="fa fa-bars"></span></button></div><div class='collapse navbar-collapse' id='fullPage-nav'><ul class="nav navbar-right navbar-nav"><li data-index="0" data-menuanchor="top" class="active"><a href="#top">Top</a><span class="nav-overlay" data-index="0">Top</span></li><li data-index="1" data-menuanchor="projects" class="active-left"><a href="#projects">Projects</a><span class="nav-overlay" data-index="1">Projects</span></li><li data-index="2" data-menuanchor="contact"><a href="#contact">About Me</a><span class="nav-overlay" data-index="2">About Me</span></li></ul></div></nav>
 
 
 <!-- index content -->
@@ -53,7 +56,7 @@
 			<div class="col-sm-8 col-sm-offset-2">
 				<h1 class="greeting">
 					<span class="name">Talk with me!</span>
-					<span class="title">undefined</span>
+					<span class="title"><div><a class='email'></a></div></span>
 				</h1>
 				<div class="section-content">
 	
@@ -63,75 +66,47 @@
 	</section>
 	</div>
 </div>
-<nav class="navbar navbar-success navbar-fixed-bottom">
+<nav id="fixed-bottom-navbar" class="navbar navbar-secondary navbar-fixed-bottom">
   <div class="container">
   	<div class="navbar-right" role="contact">
-  		<div class="btn-group" role="group" aria-label="...">
-  			<!-- exec get_content('email','hidden-md hidden-lg btn-contact touch-email') -->
-  			<!-- exec socialButton('email','hidden-md hidden-lg btn-contact touch-email') -->
-  			<!-- exec socialButton('email','hidden-md hidden-lg btn-contact touch-email') -->
-
-</div>
-
-  	</navbar>
-  </div>
+  		<div class='btn-group' role='group'>
+  		<div class="btn-toolbar" role="toolbar" aria-label="...">
+  			<a role='button' class='btn navbar-btn btn-email touch-email'><span class='fa fa-envelope-o'></span></a>
+  			<a role='button' class='btn navbar-btn btn-twitter' href=''><span class='fa fa-twitter'></span></a>
+  			<a role='button' class='btn navbar-btn btn-facebook' href=''><span class='fa fa-facebook'></span></a>
+  		</div>
+  		</div>
+		</div>
+ 	</navbar>
+ </div>
 </nav>
-<!-- <footer class="footer">
-	<nav class="navbar navbar-fixed-bottom navbar-success" id="fixed-bottom-navbar">
-		<div class="container">
-			<div class="navbar-footer">
-
-			</div>
-
-			</div>
-		</nav>
-	</footer> -->
-	<div class="modal" id="tooSmall">
-		<div class="modal-dialog">
-	      <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	          <h4 class="modal-title text-danger">Oops!&emsp;<span class="fa fa-meh-o"></span></h4>
-	        </div>
-	        <div class="modal-body">
-	          <div class="row text-justify">
-	            <div class="col-xs-12">
-	          <h4>Your device might be a tad too small.</h4>
-	          <p>This site is made to work on devices that are <em>at least <strong>320</strong> pixels wide.</em>  <span>As far as we can tell</span>, <em>your device is only <strong><span class="device-size"></span></strong> pixels wide.</em>  You can continue if you like, but things may not go smoothly.</p><p>If you think this is in error, or if you just want to chat, contact me at: <span class="inline-touch-email"><a b="aHR0cDovL2RsZ29tYmVydC5jb20=ENDStr" class="touch-email" data-user="dlgombert" data-domain="gmail" data-suffix=".com">@</a></span></p>
-	          </div>
-	        </div>
-	        </div>
-	        <div class="modal-footer">
-	          <a href="#" aria-hidden="true" data-dismiss="modal" class="btn-xs btn">Continue</a>
-	          <a href="#" b="aHR0cDovL2RsZ29tYmVydC5jb20=ENDStr" class="btn-xs touch-email btn btn-info">Email Me</a>
-	        </div>
-	      </div>
-	    </div>
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<div class="modal" id="tooSmall">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title text-danger">Oops!&emsp;<span class="fa fa-meh-o"></span></h4>
+        </div>
+        <div class="modal-body">
+          <div class="row text-justify">
+            <div class="col-xs-12">
+          <h4>Your device might be a tad too small.</h4>
+          <p>This site is made to work on devices that are <em>at least <strong>320</strong> pixels wide.</em>  <span>As far as we can tell</span>, <em>your device is only <strong><span class="device-size"></span></strong> pixels wide.</em>  You can continue if you like, but things may not go smoothly.</p><p>If you think this is in error, or if you just want to chat, contact me at: <a class='inline-email'>@</a></p>
+          </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <a href='#' aria-hidden='true' data-dismiss='modal' class='btn btn-xs btn-primary'>Continue</a>
+          <a class='btn btn-primary touch-email btn-xs' ><span class='fa-envelope-o fa'></span></a>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>if(typeof jQuery==="undefined"){var scr=document.createElement("script");scr.src="assets/jquery.min.js";document.head.appendChild(src);}</script>
 <script src="assets/vendor.min.js"></script>
 <script src="assets/main.min.js"></script>
 
+
 </body>
 </html>
-
-<!-- 			<div class="col-xs-6 col-sm-4">
-					<div class="f-wrap">
-							<h3><small><em>Contact Me</em></small></h3>
-					</div>
-			</div>
-			<div class="col-xs-6 col-sm-8">
-					<div class="f-wrap email">
-							<h3><small><i class="fa fa-envelope-o"></i><a data-user="dlgombert" data-domain="gmail" data-suffix=".com" class="desktop-email">@</a></small></h3>
-					</div>
-					<div class="f-wrap touch">
-							<h3>
-								<small class="btn-group">
-									<a class="btn-small touch-facebook btn btn-facebook"><i class="fa fa-fw fa-facebook"></i></a>
-									<a class="btn-small touch-email btn btn-email" b="aHR0cDovL2RsZ29tYmVydC5jb20=ENDStr"><i class="fa fa-fw fa-envelope-o"></i></a>
-									<a class="btn-small touch-twitter btn btn-twitter"><i class="fa fa-fw fa-twitter"></i></a>
-								</small>
-							</h3>
-					</div>
-				</div> -->
