@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+
+</body>
+<script>
+(function() {
+    var beforePrint = function() {
+
+    };
+    var afterPrint = function() {
+
+    };
+
+    if (window.matchMedia) {
+        var mediaQueryList = window.matchMedia('print');
+        mediaQueryList.addListener(function(mql) {
+            if (mql.matches) {
+                beforePrint();
+            } else {
+                afterPrint();
+            }
+        });
+    }
+   	this.parent.setAttribute('data-created','created');
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
+}());
+</script>
+</html>
